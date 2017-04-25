@@ -8,7 +8,7 @@
     <meta name="author" content="ThemeBucket">
     <link rel="shortcut icon" href="images/favicon.png">
 
-    <title>GetViaHome - Admin Dashboard</title>
+    <title>GetViaHome - User Dashboard</title>
 
     <!--Core CSS -->
     <link href="bs3/css/bootstrap.min.css" rel="stylesheet">
@@ -29,7 +29,7 @@
 <header class="header fixed-top clearfix">
 <!--logo start-->
 <div class="brand">
-    <a href="admin-dashboard.html" class="logo">
+    <a href="user-dashboard.html" class="logo">
         <img src="images/main-logo.png" class="img-responsive" />
     </a>
     <div class="sidebar-toggle-box">
@@ -157,11 +157,11 @@
         <li class="dropdown">
             <a data-toggle="dropdown" class="dropdown-toggle" href="#">
                 <img alt="" src="images/default.png">
-                <span class="username">Admin</span>
+                <span class="username">User</span>
                 <b class="caret"></b>
             </a>
             <ul class="dropdown-menu extended logout">
-                <li><a href="profile.html"><i class=" fa fa-suitcase"></i>Profile</a></li>
+                <li><a href="user-profile.html"><i class=" fa fa-suitcase"></i>Profile</a></li>
               
                 <li><a href="index.html"><i class="fa fa-key"></i> Log Out</a></li>
             </ul>
@@ -183,41 +183,27 @@
         <div class="leftside-navigation">
             <ul class="sidebar-menu" id="nav-accordion">
                 <li>
-                    <a class="active" href="admin-dashboard.html">
+                    <a href="user-dashboard.html">
                         <i class="fa fa-dashboard"></i>
                         <span>Dashboard</span>
                     </a>
                 </li>
                 <li class="sub-menu">
-                    <a href="javascript:;">
+                    <a href="javascript:;" class="active">
                         <i class="fa fa-building"></i>
                         <span>Projects</span>
                     </a>
                     <ul class="sub">
-                        <li><a href="#">Add Project</a></li>
-                        <li><a href="#">Manage Project</a></li>
-                        <li><a href="#">Manage Project Contact Details</a></li>
+                        <li class="active"><a href="browseproject.html">Browse Projects</a></li>
+                        <li><a href="#">View Selected Projects</a></li>
+                        <li><a href="#">View Invested Projects</a></li>
+                        <li><a href="#">View Contacted Projects</a></li>
                     </ul>
                 </li>
                 <li>
                     <a href="javascript:;">
                         <i class="fa fa-users"></i>
-                        <span>User Management</span>
-                    </a>
-					<ul class="sub">
-                        <li><a href="#">Manage Users</a></li>
-                    </ul>
-                </li>
-				<li>
-                    <a href="javascript:;">
-                        <i class="fa fa-comments"></i>
-                        <span>Notifications</span>
-                    </a>
-                </li>
-				<li>
-                    <a href="javascript:;">
-                        <i class="fa fa-mobile"></i>
-                        <span>Contact Request</span>
+                        <span>Manage Contact Requests</span>
                     </a>
                 </li>
             </ul>            </div>
@@ -232,58 +218,19 @@
 			<div class="col-md-12">
                     <ul class="breadcrumbs-alt">
                         <li>
-                            <a href="#" class="current">Dashboard</a>
+                            <a href="#" class="">Dashboard</a>
                         </li>
-                          <!--<li>
-                            <a class="current" href="profile.html">Profile</a>
+                         <li>
+                            <a class="" href="#">Browse Projects</a>
                         </li>
-                       <li>
-                            <a class="current" href="#">Elements</a>
-                        </li> -->
+                        <li>
+                            <a class="current" href="#">Request Project</a>
+                        </li> 
                     </ul>
                 </div>
 		</div>
         <!-- page start-->
-		<div class="row">
-    <div class="col-md-4">
-        <div class="mini-stat clearfix">
-            <span class="mini-stat-icon main-bg"><i class="fa fa-building"></i></span>
-            <div class="mini-stat-info">
-                <span>1042</span>
-                <p>Total Projects</p>
-            </div>
-        </div>
-    </div>
-    <div class="col-md-4">
-        <div class="mini-stat clearfix">
-            <span class="mini-stat-icon secondary-bg"><i class="fa fa-users"></i></span>
-            <div class="mini-stat-info">
-                <span>3682</span>
-                Total Investors
-            </div>
-        </div>
-    </div>
-    <div class="col-md-4">
-        <div class="mini-stat clearfix">
-            <span class="mini-stat-icon third-bg"><i class="fa fa-address-card"></i></span>
-            <div class="mini-stat-info">
-                <span>3268</span>
-                Total Contacts
-            </div>
-        </div>
-    </div>
-</div>
-<div class="row">
-    <div class="col-md-12">
-        <section class="panel">
-            <div class="panel-body">
-               <div id="cust-container"></div>
-            </div>
-        </section>
-    </div>
-</div>
-
-<section class="panel projectlist">
+			<section class="panel recent-project">
                     <header class="panel-heading main-bg">
                         Projects List
                         <span class="tools pull-right">
@@ -296,50 +243,61 @@
                         <table class="table  table-hover general-table">
                             <thead>
                             <tr>
+								<th width="100"></th>
                                 <th> Project Name</th>
                                 <th class="hidden-phone">Descrition</th>
                                 <th>Cost Estimate</th>
                                 <th>Total Contacted</th>
-                                <th>Investors</th>
+                                <th>Actions</th>
                             </tr>
                             </thead>
                             <tbody>
                             <tr>
+								<td><img src="images/properties/property-1.png" class="img-responsive"/></td>
                                 <td><a href="#">Project 1</a></td>
                                 <td class="hidden-phone">Lorem Ipsum dorolo imit</td>
                                 <td>25276.00$ </td>
                                 <td>22 Members</td>
-                                <td>5 Members</td>
+                                <td>
+									<div class="text-center center-block">
+										<a href="requestproject.html" class="main-btn select-btn">Select</a>
+									</div>
+								</td>
                             </tr>
                             <tr>
+								<td><img src="images/properties/property-2.png" class="img-responsive"/>
                                 <td><a href="#">Project 2</a></td>
                                 <td class="hidden-phone">Lorem Ipsum dorolo imit</td>
                                 <td>73344.00$ </td>
                                 <td>153 Members</td>
-                                <td>18 Members</td>
+                                <td><div class="text-center center-block">
+										<a href="requestproject.html" class="main-btn select-btn">Select</a>
+									</div></td>
                             </tr>
 							<tr>
+								<td><img src="images/properties/property-3.png" class="img-responsive"/>
                                 <td><a href="#">Project 3</a></td>
                                 <td class="hidden-phone">Lorem Ipsum dorolo imit</td>
                                 <td>15321.00$ </td>
                                 <td>41 Members</td>
-                                <td>26 Members</td>
+                                <td><div class="text-center center-block">
+										<a href="requestproject.html" class="main-btn select-btn">Select</a>
+									</div></td>
                             </tr>
 							<tr>
+								<td><img src="images/properties/property-4.png" class="img-responsive"/>
                                 <td><a href="#">Project 4</a></td>
                                 <td class="hidden-phone">Lorem Ipsum dorolo imit</td>
                                 <td>45279.00$ </td>
                                 <td>84 Members</td>
-                                <td>38 Members</td>
+                                <td><div class="text-center center-block">
+										<a href="requestproject.html" class="main-btn select-btn">Select</a>
+									</div></td>
                             </tr>
                             </tbody>
                         </table>
                     </div>
                 </section>
-
-
-
-
         <!-- page end-->
         </section>
     </section>
