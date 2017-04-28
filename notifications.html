@@ -183,7 +183,7 @@
         <div class="leftside-navigation">
             <ul class="sidebar-menu" id="nav-accordion">
                 <li>
-                    <a class="active" href="admin-dashboard.html">
+                    <a href="admin-dashboard.html">
                         <i class="fa fa-dashboard"></i>
                         <span>Dashboard</span>
                     </a>
@@ -209,7 +209,7 @@
                     </ul>
                 </li>
 				<li>
-                    <a href="notifications.html">
+                    <a href="notifications.html" class="active">
                         <i class="fa fa-comments"></i>
                         <span>Notifications</span>
                     </a>
@@ -232,114 +232,60 @@
 			<div class="col-md-12">
                     <ul class="breadcrumbs-alt">
                         <li>
-                            <a href="#" class="current">Dashboard</a>
+                            <a href="admin-dashboard.html">Dashboard</a>
                         </li>
-                          <!--<li>
-                            <a class="current" href="profile.html">Profile</a>
+                          <li>
+                            <a class="current" href="notifications.html">Notifications</a>
                         </li>
-                       <li>
-                            <a class="current" href="#">Elements</a>
-                        </li> -->
+                      
                     </ul>
                 </div>
 		</div>
         <!-- page start-->
 		<div class="row">
-    <div class="col-md-4">
-        <div class="mini-stat clearfix">
-            <span class="mini-stat-icon main-bg"><i class="fa fa-building"></i></span>
-            <div class="mini-stat-info">
-                <span>1042</span>
-                <p>Total Projects</p>
-            </div>
-        </div>
-    </div>
-    <div class="col-md-4">
-        <div class="mini-stat clearfix">
-            <span class="mini-stat-icon secondary-bg"><i class="fa fa-users"></i></span>
-            <div class="mini-stat-info">
-                <span>3682</span>
-                Total Investors
-            </div>
-        </div>
-    </div>
-    <div class="col-md-4">
-        <div class="mini-stat clearfix">
-            <span class="mini-stat-icon third-bg"><i class="fa fa-address-card"></i></span>
-            <div class="mini-stat-info">
-                <span>3268</span>
-                Total Contacts
-            </div>
-        </div>
-    </div>
-</div>
-<div class="row">
-    <div class="col-md-12">
-        <section class="panel">
-            <div class="panel-body">
-               <div id="cust-container"></div>
-            </div>
-        </section>
-    </div>
-</div>
-
-<section class="panel projectlist">
-                    <header class="panel-heading main-bg">
-                        Projects List
-                        <!-- <span class="tools pull-right">
-                            <a href="javascript:;" class="fa fa-chevron-down"></a>
-                            <a href="javascript:;" class="fa fa-cog"></a>
-                            <a href="javascript:;" class="fa fa-times"></a>
-                         </span> -->
-                    </header>
-                    <div class="panel-body table-responsive">
-                        <table class="table  table-hover general-table">
-                            <thead>
-                            <tr>
-                                <th> Project Name</th>
-                                <th class="hidden-phone">Descrition</th>
-                                <th>Cost Estimate</th>
-                                <th>Total Contacted</th>
-                                <th>Investors</th>
-                            </tr>
-                            </thead>
-                            <tbody>
-                            <tr>
-                                <td><a href="#">Project 1</a></td>
-                                <td class="hidden-phone">Lorem Ipsum dorolo imit</td>
-                                <td>25276.00$ </td>
-                                <td>22 Members</td>
-                                <td>5 Members</td>
-                            </tr>
-                            <tr>
-                                <td><a href="#">Project 2</a></td>
-                                <td class="hidden-phone">Lorem Ipsum dorolo imit</td>
-                                <td>73344.00$ </td>
-                                <td>153 Members</td>
-                                <td>18 Members</td>
-                            </tr>
-							<tr>
-                                <td><a href="#">Project 3</a></td>
-                                <td class="hidden-phone">Lorem Ipsum dorolo imit</td>
-                                <td>15321.00$ </td>
-                                <td>41 Members</td>
-                                <td>26 Members</td>
-                            </tr>
-							<tr>
-                                <td><a href="#">Project 4</a></td>
-                                <td class="hidden-phone">Lorem Ipsum dorolo imit</td>
-                                <td>45279.00$ </td>
-                                <td>84 Members</td>
-                                <td>38 Members</td>
-                            </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                </section>
-
-
-
-
+			<div class="notification-content">
+				<a href="managecontact.html">
+					<div class="alert alert-block alert-notification fade in">
+						 <button data-dismiss="alert" class="close close-sm" type="button">
+							<i class="fa fa-times"></i>
+						 </button>
+						 <strong>User 112 Invested on Project 5</strong>
+					</div>
+				</a>
+				<a href="managecontact.html">
+					<div class="alert alert-block alert-notification fade in">
+						 <button data-dismiss="alert" class="close close-sm" type="button">
+							<i class="fa fa-times"></i>
+						 </button>
+						 <strong>User 145 Invested on Project 4</strong>
+					</div>
+				</a>
+				<a href="managecontact.html">
+					<div class="alert alert-block alert-notification fade in">
+						 <button data-dismiss="alert" class="close close-sm" type="button">
+							<i class="fa fa-times"></i>
+						 </button>
+						 <strong>4 Users Contacted for Project 6</strong>
+					</div>
+				</a>
+				<a href="managecontact.html">
+					<div class="alert alert-block alert-notification fade in">
+						 <button data-dismiss="alert" class="close close-sm" type="button">
+							<i class="fa fa-times"></i>
+						 </button>
+						 <strong>User 173 Invested on Project 2</strong>
+					</div>
+				</a>
+				<a href="managecontact.html">
+					<div class="alert alert-block alert-notification fade in">
+						 <button data-dismiss="alert" class="close close-sm" type="button">
+							<i class="fa fa-times"></i>
+						 </button>
+						 <strong>8 Users Selected for Project 3</strong>
+					</div>
+				</a>
+			</div>
+		</div>
         <!-- page end-->
         </section>
     </section>

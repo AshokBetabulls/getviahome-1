@@ -8,7 +8,7 @@
     <meta name="author" content="ThemeBucket">
     <link rel="shortcut icon" href="images/favicon.png">
 
-    <title>GetViaHome - Admin Dashboard</title>
+    <title>GetViaHome - Contact Request</title>
 
     <!--Core CSS -->
     <link href="bs3/css/bootstrap.min.css" rel="stylesheet">
@@ -183,7 +183,7 @@
         <div class="leftside-navigation">
             <ul class="sidebar-menu" id="nav-accordion">
                 <li>
-                    <a class="active" href="admin-dashboard.html">
+                    <a href="admin-dashboard.html">
                         <i class="fa fa-dashboard"></i>
                         <span>Dashboard</span>
                     </a>
@@ -215,7 +215,7 @@
                     </a>
                 </li>
 				<li>
-                    <a href="contactrequest.html">
+                    <a href="contactrequest.html" class="active">
                         <i class="fa fa-mobile"></i>
                         <span>Contact Request</span>
                     </a>
@@ -231,8 +231,11 @@
 		<div class="row">
 			<div class="col-md-12">
                     <ul class="breadcrumbs-alt">
+					<li>
+                            <a href="admin-dashboard.html">Dashboard</a>
+                        </li>
                         <li>
-                            <a href="#" class="current">Dashboard</a>
+                            <a href="contactrequest.html" class="current">Contact Request</a>
                         </li>
                           <!--<li>
                             <a class="current" href="profile.html">Profile</a>
@@ -244,93 +247,54 @@
                 </div>
 		</div>
         <!-- page start-->
-		<div class="row">
-    <div class="col-md-4">
-        <div class="mini-stat clearfix">
-            <span class="mini-stat-icon main-bg"><i class="fa fa-building"></i></span>
-            <div class="mini-stat-info">
-                <span>1042</span>
-                <p>Total Projects</p>
-            </div>
-        </div>
-    </div>
-    <div class="col-md-4">
-        <div class="mini-stat clearfix">
-            <span class="mini-stat-icon secondary-bg"><i class="fa fa-users"></i></span>
-            <div class="mini-stat-info">
-                <span>3682</span>
-                Total Investors
-            </div>
-        </div>
-    </div>
-    <div class="col-md-4">
-        <div class="mini-stat clearfix">
-            <span class="mini-stat-icon third-bg"><i class="fa fa-address-card"></i></span>
-            <div class="mini-stat-info">
-                <span>3268</span>
-                Total Contacts
-            </div>
-        </div>
-    </div>
-</div>
-<div class="row">
-    <div class="col-md-12">
-        <section class="panel">
-            <div class="panel-body">
-               <div id="cust-container"></div>
-            </div>
-        </section>
-    </div>
-</div>
+		
+
 
 <section class="panel projectlist">
                     <header class="panel-heading main-bg">
-                        Projects List
-                        <!-- <span class="tools pull-right">
-                            <a href="javascript:;" class="fa fa-chevron-down"></a>
-                            <a href="javascript:;" class="fa fa-cog"></a>
-                            <a href="javascript:;" class="fa fa-times"></a>
-                         </span> -->
+                        Contact Request
                     </header>
                     <div class="panel-body table-responsive">
                         <table class="table  table-hover general-table">
                             <thead>
                             <tr>
-                                <th> Project Name</th>
-                                <th class="hidden-phone">Descrition</th>
-                                <th>Cost Estimate</th>
-                                <th>Total Contacted</th>
-                                <th>Investors</th>
+								<th>Name</th>
+                                <th>Email</th>
+                                <th>Name of the Project</th>
+                                <th>Status</th>
+                                <th>Actions</th>
                             </tr>
                             </thead>
                             <tbody>
                             <tr>
-                                <td><a href="#">Project 1</a></td>
-                                <td class="hidden-phone">Lorem Ipsum dorolo imit</td>
-                                <td>25276.00$ </td>
-                                <td>22 Members</td>
-                                <td>5 Members</td>
+								<td>David</td>
+                                <td>david@hotmail.com</td>
+                                <td>Sample</td>
+                                <td>Accepted</td>
+                                <td>
+									<a href="#"  data-placement="top" data-toggle="tooltip" class="tooltips" data-original-title="Approve"><img src="images/approved1.png" /></a>
+									<a href="#"  data-placement="top" data-toggle="tooltip" class="tooltips" data-original-title="Reject"><img src="images/cancel.png" /></a>
+								</td>
                             </tr>
-                            <tr>
-                                <td><a href="#">Project 2</a></td>
-                                <td class="hidden-phone">Lorem Ipsum dorolo imit</td>
-                                <td>73344.00$ </td>
-                                <td>153 Members</td>
-                                <td>18 Members</td>
+                           <tr>
+								<td>John</td>
+                                <td>john@hotmail.com</td>
+                                <td>Sample</td>
+                                <td>Rejected</td>
+                                <td>
+									<a href="#"  data-placement="top" data-toggle="tooltip" class="tooltips" data-original-title="Approve"><img src="images/approved1.png" /></a>
+									<a href="#"  data-placement="top" data-toggle="tooltip" class="tooltips" data-original-title="Reject"><img src="images/cancel.png" /></a>
+								</td>
                             </tr>
 							<tr>
-                                <td><a href="#">Project 3</a></td>
-                                <td class="hidden-phone">Lorem Ipsum dorolo imit</td>
-                                <td>15321.00$ </td>
-                                <td>41 Members</td>
-                                <td>26 Members</td>
-                            </tr>
-							<tr>
-                                <td><a href="#">Project 4</a></td>
-                                <td class="hidden-phone">Lorem Ipsum dorolo imit</td>
-                                <td>45279.00$ </td>
-                                <td>84 Members</td>
-                                <td>38 Members</td>
+								<td>Loy</td>
+                                <td>loy@yahoo.com</td>
+                                <td>Sample</td>
+                                <td>Waiting</td>
+                                <td>
+									<a href="#"  data-placement="top" data-toggle="tooltip" class="tooltips" data-original-title="Approve"><img src="images/approved1.png" /></a>
+									<a href="#"  data-placement="top" data-toggle="tooltip" class="tooltips" data-original-title="Reject"><img src="images/cancel.png" /></a>
+								</td>
                             </tr>
                             </tbody>
                         </table>
@@ -365,70 +329,6 @@
 <!--common script init for all pages-->
 <script src="js/scripts.js"></script>
 
-<script>
-	Highcharts.chart('cust-container', {
-    chart: {
-        type: 'column'
-    },
-    title: {
-        text: 'Monthly Report'
-    },
-    
-    xAxis: {
-        categories: [
-            'Jan',
-            'Feb',
-            'Mar',
-            'Apr',
-            'May',
-            'Jun',
-            'Jul',
-            'Aug',
-            'Sep',
-            'Oct',
-            'Nov',
-            'Dec'
-        ],
-        crosshair: true
-    },
-    yAxis: {
-        min: 0,
-		max:200,
-        title: {
-            text: 'Value'
-        }
-    },
-    tooltip: {
-        headerFormat: '<span style="font-size:10px">{point.key}</span><table>',
-        pointFormat: '<tr><td style="color:{series.color};padding:0">{series.name}: </td>' +
-            '<td style="padding:0"><b>{point.y:.f}</b></td></tr>',
-        footerFormat: '</table>',
-        shared: false,
-        useHTML: false
-    },
-    plotOptions: {
-        column: {
-            pointPadding: 0.1,
-            borderWidth: 0
-        }
-    },
-    series: [{
-        name: 'Total Projects',
-        data: [25, 38, 52, 73, 157, 79, 159, 62, 94, 52, 29, 146],
-		color:'#338b7a'
-    }, {
-        name: 'Total Investors',
-        data: [64, 83, 92, 79, 19, 142, 97, 71, 150, 49, 83, 47],
-		color:'#4997b7'
-
-    }, {
-        name: 'Total Contacts',
-        data: [82, 49, 129, 72, 68, 37, 73, 59, 29, 169, 58, 73],
-		color:'#c3a515'
-
-    }]
-});
-</script>
 
 </body>
 </html>
