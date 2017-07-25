@@ -85,14 +85,14 @@
 <script>
 		 $(document).ready(function() {
                 $("#SignIn").click(function(){
-                if ($('#user').val() == "admin@getviahome.com") {
+                if ($('#user').val() == "admin@viahome.com") {
                 	window.location.href = "admin-dashboard.html";
                 }
-				else if ($('#user').val() == "user@getviahome.com") {
+				else if ($('#user').val() == "user@viahome.com") {
                 	window.location.href = "user-dashboard.html";
                 }
                 	else {
-                  window.location.href = "index.html";
+                  alert("Wrong credentials")
                   }
                 });
     });

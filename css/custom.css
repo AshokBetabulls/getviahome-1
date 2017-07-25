@@ -106,6 +106,7 @@ background:transparent;
   color: #338b7a !important;
   border-radius:0px !important;
  width:100%;
+    padding-top: 15px;
 }
 
 
@@ -165,6 +166,7 @@ input:focus:invalid:focus, textarea:focus:invalid:focus, select:focus:invalid:fo
   color: #338b7a !important;
   border-radius:0px !important;
  width:100%;
+    padding-top: 15px;
 }
 
 
@@ -217,6 +219,7 @@ input:focus:invalid:focus, textarea:focus:invalid:focus, select:focus:invalid:fo
 
  visibility: visible !important;
  width:100%;
+    
 
 }
 .reg-wrap {
@@ -225,7 +228,7 @@ input:focus:invalid:focus, textarea:focus:invalid:focus, select:focus:invalid:fo
 }
 .form-signin p {
     text-align: left;
-    color: #b6b6b6;
+    color: #338b7a;
     font-size: 14px;
     font-weight: 600;
 }
@@ -679,3 +682,7 @@ color: #1fb5ad;
 table tr th {color:#338b7a;border-bottom: 2px solid #338b7a !important;}
 
 table tr td img {cursor:pointer;}
+.mangaeicons tbody tr td a img{
+    display:inline-block;
+    padding-left: 10px;
+}

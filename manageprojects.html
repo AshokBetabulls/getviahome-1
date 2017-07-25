@@ -194,9 +194,9 @@
                         <span>Projects</span>
                     </a>
                     <ul class="sub">
-                        <li><a href="addproject.html">Add Project</a></li>
+                        <li><a href="createproject.html">Create Project</a></li>
                         <li class="active"><a href="manageprojects.html">Manage Project</a></li>
-                        <li><a href="managecontact.html">Manage Project Contact Details</a></li>
+<!--                        <li><a href="managecontact.html">Manage Project Contact Details</a></li>-->
                     </ul>
                 </li>
                 <li>
@@ -262,7 +262,7 @@
                          </span> -->
                     </header>
                     <div class="panel-body table-responsive">
-                        <table class="table  table-hover general-table">
+                        <table class="table  table-hover general-table mangaeicons">
                             <thead>
                             <tr>
 								<th width="100"></th>
@@ -281,8 +281,15 @@
                                 <td>25276.00$ </td>
                                 <td>22 Members</td>
                                 <td>
-                                    <a href="manageprojectsview.html"><img src="images/edit.png" title="" data-placement="top" data-toggle="tooltip" class="tooltips img-responsive" data-original-title="Edit"></a>
-								</td>
+                                    
+                                 <a href="manageprojectsview.html"><img src="images/edit.png" title="" data-placement="top" data-toggle="tooltip" class="tooltips img-responsive" data-original-title="Edit"></a>
+                                        <a href="#popup" data-toggle="modal" >
+                                            <img src="images/rubbish-bin.png" title="" data-placement="top" data-toggle="tooltip" class="tooltips img-responsive" data-original-title="Delete"></a>
+                                        
+                                        
+                        
+                                    
+                                </td>
                             </tr>
                             <tr>
 								<td><img src="images/properties/property-2.png" class="img-responsive"/>
@@ -290,7 +297,11 @@
                                 <td class="hidden-phone">Lorem Ipsum dorolo imit</td>
                                 <td>73344.00$ </td>
                                 <td>153 Members</td>
-                                <td><a href="manageprojectsview.html"><img src="images/edit.png" title="" data-placement="top" data-toggle="tooltip" class="tooltips img-responsive" data-original-title="Edit"></a></td>
+                                <td><a href="manageprojectsview.html"><img src="images/edit.png" title="" data-placement="top" data-toggle="tooltip" class="tooltips img-responsive" data-original-title="Edit"></a>
+                                <a href="#popup" data-toggle="modal" >
+                                            <img src="images/rubbish-bin.png" title="" data-placement="top" data-toggle="tooltip" class="tooltips img-responsive" data-original-title="Delete"></a>
+                                
+                                </td>
                             </tr>
 							<tr>
 								<td><img src="images/properties/property-3.png" class="img-responsive"/>
@@ -298,7 +309,11 @@
                                 <td class="hidden-phone">Lorem Ipsum dorolo imit</td>
                                 <td>15321.00$ </td>
                                 <td>41 Members</td>
-                                <td><a href="manageprojectsview.html"><img src="images/edit.png" title="" data-placement="top" data-toggle="tooltip" class="tooltips img-responsive" data-original-title="Edit"></a></td>
+                                <td><a href="manageprojectsview.html"><img src="images/edit.png" title="" data-placement="top" data-toggle="tooltip" class="tooltips img-responsive" data-original-title="Edit"></a>
+                                <a href="#popup" data-toggle="modal">
+                                            <img src="images/rubbish-bin.png" title="" data-placement="top" data-toggle="tooltip" class="tooltips img-responsive" data-original-title="Delete"></a>
+                                
+                                </td>
                             </tr>
 							<tr>
 								<td><img src="images/properties/property-4.png" class="img-responsive"/>
@@ -306,7 +321,10 @@
                                 <td class="hidden-phone">Lorem Ipsum dorolo imit</td>
                                 <td>45279.00$ </td>
                                 <td>84 Members</td>
-                                <td><a href="manageprojectsview.html"><img src="images/edit.png" title="" data-placement="top" data-toggle="tooltip" class="tooltips img-responsive" data-original-title="Edit"></a></td>
+                                <td><a href="manageprojectsview.html"><img src="images/edit.png" title="" data-placement="top" data-toggle="tooltip" class="tooltips img-responsive" data-original-title="Edit"></a>
+                                <a href="#popup" data-toggle="modal" >
+                                            <img src="images/rubbish-bin.png" title="" data-placement="top" data-toggle="tooltip" class="tooltips img-responsive" data-original-title="Delete"></a>
+                                </td>
                             </tr>
                             </tbody>
                         </table>
@@ -409,6 +427,34 @@
 <script>
 			new UISearch( document.getElementById( 'sb-search' ) );
 		</script>
+    <!-- Modal -->
+          <div aria-hidden="true" aria-labelledby="myModalLabel" role="dialog" tabindex="-1" id="popup" class="modal fade">
+              <div class="modal-dialog">
+                  <div class="modal-content">
+                      <div class="modal-header">
+                          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                          <h3 class="modal-title">Please Confirm</h3>
+                      </div>
+                      <div class="modal-body">
+							<div class="row">
+								<div class="col-md-8 col-md-offset-2">
+<!--
+									<div class="" id="cust-login">
+										<input placeholder="Email" type="email" required>
+									</div>
+-->
+                                    <h4>Are you sure want to delete?</h4>
+								</div>
+							</div>
+                      </div>
+                      <div class="modal-footer">
+                          <button data-dismiss="modal" class="danger-btn" type="button">Cancel</button>
+                          <button class="main-btn" type="button">Confirm</button>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <!-- modal -->
 
 </body>
 </html>
